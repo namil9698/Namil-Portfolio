@@ -1,32 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namil's Portfolio</title>
+    <meta name="description" content="Portfolio for software engineer Namil">
+    <meta name="author" content="Namil">
     <link rel="stylesheet" href="./fullpage/fullpage.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./fullpage/fullpage.min.js" ></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <!-- reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <!-- favicon -->
+    <script src="https://kit.fontawesome.com/0d5898eaab.js" crossorigin="anonymous"></script>
+
+
+    <script src="./fullpage/fullpage.min.js"></script>
     <script src="./main.js" defer></script>
     <title>Document</title>
 </head>
+
 <body>
 
-<div id="full-page">
-    <div class="section s0">
-        <h2>Section 0</h2>
-    </div>
-    <div class="section s1">
-        <h2>Section 1</h2>
-        <h3>Sb Title</h3>
-    </div>
-    <div class="section s2">
-        <h2>Section 2</h2>
-    </div>
-    <div class="section s3">
-        <h2>Section 3</h2>
-    </div>
-</div>
+    <div id="full-page">
+        <!-- home -->
+        <section id="home" class="section home">
 
- 
+            <div class="wrrap">
+
+                <h1 class="home__title">Hello, <br /> I'm MiruMaru</h1>
+                <h2 class="home__description">저는
+                    <div class="description-me">
+                        <ul class="description-me-list">
+                            <li>항상 열정적이고 성실한</li>
+                            <li>창의적인 마인드를 가진 </li>
+                            <li>언제나 생각하고 고민하는</li>
+                            <li>계속해서 미래를 향하는</li>
+                            <li>항상 열정적이고 성실한</li>
+                        </ul>
+                    </div>
+                    <br> 개발자 입니다!
+                </h2>
+
+
+                <button class="home__contact">Contact Me</button>
+            </div>
+
+        </section>
+
+<!-- skill -->
+        <setion id="skill" class="section skill">
+            <div class="wrapp">
+                <h1>SKILL</h1>
+
+                <div class="about__majors">
+                    <div class="major">
+                        <div class="major__icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h2 class="major__title">HTML</h2>
+                        <div class="major__graph ">
+                            <span class="graph1" style=" width: 95%">95%</span>
+                        </div>
+                    </div>
+                    <div class="major">
+                        <div class="major__icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h2 class="major__title">CSS</h2>
+                        <div class="major__graph ">
+                            <span class="graph2" style=" width: 90%">90%</span>
+                        </div>
+                    </div>
+                    <div class="major">
+                        <div class="major__icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h2 class="major__title">JS</h2>
+                        <div class="major__graph ">
+                            <span class="graph3" style=" width: 70%">70%</span>
+                        </div>
+                    </div>
+                    <div class="major">
+                        <div class="major__icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h2 class="major__title">React</h2>
+                        <div class="major__graph">
+                            <span class="graph4" style=" width: 30%">30%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </setion>
+
+
+
+        <setion class="section s2">
+            <h2>Section 2</h2>
+        </setion>
+        <setion class="section s3">
+            <h2>Section 3</h2>
+        </setion>
+    </div>
+
+
 </body>
+
 </html>
