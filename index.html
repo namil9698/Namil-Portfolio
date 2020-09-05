@@ -9,6 +9,7 @@
     <meta name="author" content="Namil">
     <link rel="stylesheet" href="./fullpage/fullpage.min.css">
     <link rel="stylesheet" href="style.css">
+
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <!-- reset -->
@@ -16,7 +17,14 @@
     <!-- favicon -->
     <script src="https://kit.fontawesome.com/0d5898eaab.js" crossorigin="anonymous"></script>
 
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./swiper.js" defer></script>
 
+    <!-- fullpage -->
     <script src="./fullpage/fullpage.min.js"></script>
     <script src="./main.js" defer></script>
     <title>Document</title>
@@ -99,11 +107,25 @@
         <!-- work -->
 
         <setion id="works" class="section works">
-            <div class="works__container">
-                <div class="works__list">
-                    <div class="work p1"></div>
-                    <div class="work p2"></div>
-                    <div class="work p3"></div>
+           
+            <h1>Works</h1>
+          
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="project">
+                        <img class="project__img" src="./img/work/github.jpg" alt="project_img">
+                        <div class="project__description">
+                            <h2>Github site</h2>
+                            <span>Clone coding with HTML and CSS</span>
+                            <a href="#"  target="__blanck">	&lt;Detail&gt;</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                
                 </div>
             </div>
         </setion>
@@ -145,6 +167,7 @@
 
         </setion>
     </div>
+
 
 </body>
 

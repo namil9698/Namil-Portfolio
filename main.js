@@ -1,7 +1,6 @@
 
 
 
-
 new fullpage('#full-page', {
     licenseKey: '',
     sectionsColor: ['#a5d8ff', '', '#ffffff', '#ffffff', '#ffffff'],
@@ -16,3 +15,5 @@ new fullpage('#full-page', {
         console.log('afterLoad');
     }
 });
+
+

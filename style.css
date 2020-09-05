@@ -74,10 +74,16 @@
 :root {
     font-family: 'Black Han Sans', sans-serif;
     font-size: 62.5%;
-
-
-
+    
 }
+
+a{  color:#fff;
+    text-decoration: none;
+    outline: none;
+}
+a:active {text-decoration: none;  }
+
+
 
 /* section */
 .section {
@@ -230,11 +236,7 @@
 }
 
 .major:hover .graph1 {
-
-
     animation: graph1 1s 1;
-
-
 }
 
 .major:hover .graph2 {
@@ -253,57 +255,91 @@
 }
 
 /* Work */
-
-.works__container {
-    
+#works {
+    background-color:#a5d8ff !important;
+    text-align: center;
 }
 
-.works__list {
-    background-color: blue;
-    margin:0 auto;
+#works h1 {
+    color: #1864ab;
+    margin: 2rem;
+    font-size: 6rem;
+}
+
+.swiper-container {
     width: 128rem;
     height: 72rem;
-    position: relative;
-    overflow: hidden;
-}
+    border-radius: 40px;
+  }
 
-/* .work::before {
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+   .project {
+    position: relative;;
+    width: 128rem;
+    height: 72rem;
+   
+   }
+
+   .project__img {
+       max-width: 100%;
+       max-width: 100%;
+      
+   }
+
+   .project__description {
+    position:absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: all 300ms ease;
+    transform: translateY(10rem);
+    color:white;
+    font-size: 3rem;
+
+   }
+
+   .project:hover .project__description {
+       opacity: 0.8;
+       transform: translateY(0rem);
+   }
+
+   
+   .project__description h2 {
+       font-size: 5rem;
+   }
+
+   .project__description h2::after {
+    background-color: white;
     content: "";
     display: block;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-} */
+    position: relative;
+    left: 50%;
+    width: 10rem;
+    height: 0.2rem;
+    margin: 3rem 0 3rem -5rem;
+   }
 
+   .project__description span {
+       margin-bottom: 3rem;
+   }
 
-.work {
-    transform: translateY(0);
-    position: abosulte;
-    box-sizing: border-box;
-    border-radius: 5rem;
-    border: px solid black;
-    background-size: cover;
-    width: 128rem;
-    height: 72rem;
-}
-
-.p1 {
-    background:url(./img/work/github.jpg)no-repeat center; 
-   
-}
-
-.p1:hover {
-    transform: scale(1.2);
-    
-}
-.p2 {
-    background:url(./img/work/github.jpg)no-repeat center;
-    
-}
-.p3 {
-    background:url(./img/work/github.jpg)no-repeat center;
-    
-}
-
+   .project__description a:hover {
+       color: #e64980;
+   }
 
 
 /* About */
@@ -314,7 +350,7 @@
 }
 
 .about .wrapp {
-    margin-bottom: 100px;
+    transform: translateY(-10rem);
     display: flex;
     justify-content: space-around;
 
