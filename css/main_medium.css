@@ -1,0 +1,51 @@
+
+
+:root {
+    font-size: 50%;
+}
+
+.section {
+    height: 100%;
+    padding: 0;
+
+}
+
+
+.home__icon {
+    display: none;
+}
+
+.skill__majors {
+   flex-wrap: wrap;
+    
+}
+
+.majors__top {
+    margin-bottom: 3rem;
+}
+
+
+.about .wrapp {
+    transform: translateY(-18rem);
+    display: block;
+}
+
+.about img,.about-me{
+    display: block;
+    margin: 0 auto;
+}
+
+
+.about__avatar {
+    margin-left: 0;
+}
+
+.about-me {
+    height: 30rem;
+}
+
+@media screen and (max-width:768px) {
+    :root {
+        font-size: 40%;
+    }
+}
